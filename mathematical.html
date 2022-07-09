@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function joinstr()
+        {
+            document.frm.txt3.value = parseInt(document.frm.txt1.value) + parseInt(document.frm.txt2.value);
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="frm">
+        <table align="center" cellspacing="20">
+            <tr>
+                <td>
+                    <input type="text" name="txt1" placeholder="First Number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="txt2" placeholder="Second Number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="txt3" placeholder="Sum">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="+" onclick="joinstr();">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
