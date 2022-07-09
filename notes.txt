@@ -1,0 +1,9 @@
+xs - phone < 768px
+sm - tablet >=768px  - <992px
+md - small laptops - >=992px
+lg - laptop desktop - >=1200px
+
+
+offset to arrange elements in grid:-
+
+Grid Classes

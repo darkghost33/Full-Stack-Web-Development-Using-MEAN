@@ -1,0 +1,306 @@
+<!-- Arrange image in linear order -->
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <style type="text/CSS">
+        /* #img1
+        {
+            position: absolute;
+            left: 5px;
+        }
+        #img2
+        {
+            position: absolute;
+            left: px;
+        } */
+        
+    </style>
+</head>
+<body> -->
+    <!-- Arrange using Table
+    <img id="img1" src="images/img1.jpg" alt="">
+    <img id="img2" src="images/img2.jpg" alt="">
+    <img id="img3" src="images/img3.jpg" alt="">
+    <img id="img4" src="images/img4.jpg" alt="">
+</body>
+</html>-->
+
+
+
+
+
+
+<!-- Sample Page  -->
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table cellspacing="5">
+        <tr>
+            <td colspan="5" bgcolor="grey">Website Name</td>
+        </tr>
+        <tr>
+            <td bgcolor="green">Home</td>
+            <td bgcolor="green">About Us</td>
+            <td bgcolor="green">Galllery</td>
+            <td bgcolor="green">Products</td>
+            <td bgcolor="green">Contact Us</td>
+        </tr>
+        <tr>
+            <td bgcolor="light blue" colspan="2" align="center" style="height:200px;">
+                Latest News
+            </td>
+            <td bgcolor="light blue" colspan="3" align="center">
+                Matter
+            </td>
+        </tr>
+    </table>
+</body>
+</html> -->
+
+
+
+
+
+<!-- CDN of Bootstrap implementation -->
+
+<!--<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    Full Stack Development
+    <h1>Using MEAN</h1>
+</body>
+</html> -->
+
+<!-- line-heigth == line-spacing in ms office -->
+<!-- min - minified(loads faster as it is compressed) -->
+
+
+
+
+
+
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+--><!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!--<link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <style type="text/css">
+        div{
+            background-color: #dcdcdc;
+        }
+    </style>
+    <title>Bootstrap</title>
+</head>
+<body>
+    <div class="container">Spiderman</div>
+    <div class="container-fluid">In multiverse</div>
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <title>Bootstrap Grid System</title>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="row">
+            <div class="col-md-12">Section 1</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4" style="background-color: red;">Section 1</div>
+            <div class="col-md-4" style="background-color: green;">Section 1</div>
+            <div class="col-md-4" style="background-color: blue;">Section 1</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3" style="background-color: rgb(140, 231, 54);">Section 1</div>
+            <div class="col-md-3" style="background-color: rgb(240, 131, 15);">Section 1</div>
+            <div class="col-md-3" style="background-color: rgb(137, 159, 247);">Section 1</div>
+            <div class="col-md-3" style="background-color: yellow;">Section 1</div>
+        </div>
+
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+<!-- MULTIPLE DIVISIONS -->
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <title>Bootstrap Grid System</title>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="row">
+            <div class="col-md-3 offset-md-9" style="background-color: aqua;">
+                Login</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-6" style="background-color: red;">Section 1</div>
+          
+        </div>
+
+        <div class="row">
+            <div class="col-md-3" style="background-color: rgb(140, 231, 54);">Section 1</div>
+            <div class="col-md-3 offset-md-6" style="background-color: rgb(240, 131, 15);">Section 1</div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-3">Section 1</div>
+                    <div class="col-md-3">Section 2</div>
+                    <div class="col-md-3">Section 3</div>
+                    <div class="col-md-3">Section 4</div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-3">Section 5</div>
+                    <div class="col-md-3">Section 6</div>
+                    <div class="col-md-3">Section 7</div>
+                    <div class="col-md-3">Section 8</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <title>Bootstrap Grid System</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-4">Section 1</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">Section 2</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">Section 3</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">Section 4</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">Section 5</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">Section 6</div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+<!-- Web Page -->
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <title>Bootstrap Grid System</title>
+</head>
+<body>
+    <div class="container-fluid" style="background-color: #dcdcdc;">
+        <div class="row">
+            <div class="col-md-2 col-sm-2">
+                <img src="images/img1.jpg" alt="" style="height: 50px; width: 50px;">
+            </div>
+            <div class="col-md-2 offset-md-8 col-sm-2 offset-sm-8">Login/Logout</div>
+        </div>
+            <div class="row">
+            <div class="col-md-12">
+                <img src="https://graphicsfamily.com/wp-content/uploads/edd/2021/01/Facebook-Shoes-Sale-Timeline-Cover-Banner-Free-PSD-1536x864.jpg" alt="" style="height: 300px; width: 100%;">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6" style="background-color: aqua;">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-7">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">Home</div>
+                                    <div class="col-md-4 col-sm-4">About Us</div>
+                                    <div class="col-md-4 col-sm-4">Gallery</div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-5">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">Contact Us</div>
+                                    <div class="col-md-6 col-sm-6">Blog</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="line-height: 80px;">
+                <div class="col-md-2 col-sm-2" style="background-color: rgb(248, 248, 90);">
+                    <div class="row">
+                        <div>Allahabad</div>
+                        <div>Lucknow</div>
+                        <div>Varanasi</div>
+                        <div>Kanpur</div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-sm-10" style="background-color: rgb(113, 255, 77);"></div>
+            </div>
+            <div class="col-md-12 col-sm-12" style="text-align:center; background-color: rgb(46, 71, 77); color: aliceblue;">&copy; Made by Devesh with &hearts;-2022</div>
+        </div>
+</body>
+</html> -->
