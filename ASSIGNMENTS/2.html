@@ -3,69 +3,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="text/javascript">
-        function operation()
+    <title>Simple Calci</title>
+
+    <style type="text/css">
+        #txt1:focus
         {
-            if(document.frm.btn1.value == "+")
-            {
-                document.frm.res.value = parseInt(document.frm.num1.value) + parseInt(document.frm.num2.value);
-            }
-            else if(document.frm.btn2.value == "-")
-            {
-                document.frm.res.value = parseInt(document.frm.num1.value) - parseInt(document.frm.num2.value);
-            }
-            else if(document.frm.btn3.value == "x")
-            {
-                document.frm.res.value = parseInt(document.frm.num1.value) * parseInt(document.frm.num2.value);
-            }
-            else if(document.frm.btn4.value == "/")
-            {
-                document.frm.res.value = parseInt(document.frm.num1.value) / parseInt(document.frm.num2.value);
-            }
-            else if(document.frm.btn5.value == "Clear")
-            {
-                document.frm.num1.value = "";
-                document.frm.num2.value = "";
-                document.frm.res.value = "";
-            }
+            border:4px solid red;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function add()
+        {
+            document.frm.res.value = parseInt(document.frm.num1.value) + parseInt(document.frm.num2.value);
+        }
+        function sub()
+        {
+            document.frm.res.value = parseInt(document.frm.num1.value) - parseInt(document.frm.num2.value);
+        }
+        function mul()
+        {
+            document.frm.res.value = parseInt(document.frm.num1.value) * parseInt(document.frm.num2.value);
+        }
+        function div()
+        {
+            document.frm.res.value = parseInt(document.frm.num1.value) / parseInt(document.frm.num2.value);
+        }
+        function reset()
+        {
+            document.frm.num1.value = "";
+            document.frm.num2.value = "";
+            document.frm.res.value = "";
         }
     </script>
 </head>
-<body>
+<body style="background-color: #a1adfa;">
     <div> &nbsp;</div>
     <form action="" name="frm">
         <table align="center" cellspacing="20"  style="border: 5px solid blue; background-color: #dcdcdc;">
             <tr>
                 <td>
-                    <input type="text" name="num1" placeholder="First Number">
+                    <input id="txt1" type="text" name="num1" placeholder="First Number">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="text" name="num2" placeholder="Second Number">
+                    <input id="txt1"type="text" name="num2" placeholder="Second Number">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="text" name="res" placeholder="Result">
+                    <input id="txt1" type="text" name="res" placeholder="Result" style="border: 4px solid greenyellow;">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="button" name="btn1" value="+" onclick="operation();">
-                    <input type="button" name="btn2" value="-" onclick="operation();">
+                    <input type="button" name="btn1" value="+" onclick="add();" style="border: 2px solid blue;">
+                    <input type="button" name="btn2" value="-" onclick="sub();" style="border: 2px solid blue;">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="button" name="btn3" value="x" onclick="operation();">
-                    <input type="button" name="btn4" value="/" onclick="operation();">
+                    <input type="button" name="btn3" value="x" onclick="mul();"style="border: 2px solid blue;">
+                    <input type="button" name="btn4" value="/" onclick="div();"style="border: 2px solid blue;">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="button" name="btn5" value="Clear" onclick="operation();" style="color: red;">
+                    <input type="button" name="btn5" value="Clear" onclick="reset();" style="color: red;">
                 </td>
             </tr>
         </table>
