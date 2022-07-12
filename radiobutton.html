@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show()
+        {
+            if(document.frm.r1[0].checked)
+            document.write(document.frm.r1[0].value);
+            else if(document.frm.r1[1].checked)
+            document.write(document.frm.r1[1].value);
+        }
+
+    </script>
+</head>
+<body>
+    <form action="" name="frm">
+        <input type="radio" name="r1" value="Male">Male
+        <input type="radio" name="r1" value="Female">Female
+        <input type="button" value="Click Here" ondblclick="show();">
+    </form>
+</body>
+</html>

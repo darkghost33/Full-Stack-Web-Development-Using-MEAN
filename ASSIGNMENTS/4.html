@@ -1,0 +1,251 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <script type="text/javascript">
+
+        function solve()
+        {
+            //document.getElementById("tm").textContent = "Total Marks = "
+            no_attempt = 0;
+            corr_ans = 0;
+            wrong_ans = 0;
+            c=0;
+
+            if(document.frm.a1[0].checked || document.frm.a1[1].checked || document.frm.a1[2].checked || document.frm.a1[3].checked)
+            {
+                c++;
+                if(document.frm.a1[0].checked)  corr_ans++;
+                else    wrong_ans++;
+            }
+            if(document.frm.b1[0].checked || document.frm.b1[1].checked || document.frm.b1[2].checked || document.frm.b1[3].checked)
+            {
+                c++;
+                if(document.frm.b1[2].checked)  corr_ans++;
+                else    wrong_ans++;
+            }
+            if(document.frm.c1[0].checked || document.frm.c1[1].checked || document.frm.c1[2].checked || document.frm.c1[3].checked)
+            {
+                c++;
+                if(document.frm.c1[3].checked)  corr_ans++;
+                else    wrong_ans++;
+            }
+            if(document.frm.d1[0].checked || document.frm.d1[1].checked || document.frm.d1[2].checked || document.frm.d1[3].checked)
+            {
+                c++;
+                if(document.frm.d1[3].checked)  corr_ans++;
+                else    wrong_ans++;
+            }
+            if(document.frm.e1[0].checked || document.frm.e1[1].checked || document.frm.e1[2].checked || document.frm.e1[3].checked)
+            {
+                c++;
+                if(document.frm.e1[0].checked)  corr_ans++;
+                else    wrong_ans++;
+            }
+
+            no_unattempt = total - c;
+            total = corr_ans*2;
+
+            document.getElementById("tq").textContent = "Total Number of Questions = 5";
+            document.getElementById("ta").textContent = "No. of Attempted Questions = " + c;
+            document.getElementById("tua").textContent = "No. of Unattempted Questions = " + no_attempt; 
+            document.getElementById("ca").textContent = "No. of Correct Questions = " + corr_ans;
+            document.getElementById("ia").textContent = "No. of Incorrect Questions = " + wrong_ans;
+            document.getElementById("tm").textContent = "Total Marks = " + total + " out of 10"
+
+        }
+    </script>
+</head>
+<body>
+    <div>&nbsp;</div>
+    <form action="" style="margin-left: 10px;" name="frm">
+        <table align="center" cellspacing="20" style="border: 5px solid rgb(41, 244, 41);">
+            <tr>
+                <td>
+                    <div>Q1.Javascript is an _______ language?</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="a1" value="0">Object-Oriented</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="a1" value="1">Object-Based</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="a1" value="2">Procedural</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="a1" value="3">None of the above</div>
+                </td>
+            </tr>
+
+            <tr><td><div>&nbsp;</div></td></tr>
+
+            <tr>
+                <td>
+                    <div>Q2. Which of the following methods is used to access HTML elements using Javascript?</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="b1" value="0">getElementbyId()</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="b1" value="1">getElementsByClassName()</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="b1" value="2">Both A and B</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="b1" value="3">None of the above</div>
+                </td>
+            </tr>
+
+
+            <tr><td><div>&nbsp;</div></td></tr>
+
+            <tr>
+                <td>
+                    <div>Q3. Which of the following methods can be used to display data in some form using Javascript?</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="c1" value="0">document.write()</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="c1" value="1">console.log()</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="c1" value="2">window.alert()</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="c1" value="3">All of the above</div>
+                </td>
+            </tr>
+
+
+            <tr><td><div>&nbsp;</div></td></tr>
+
+            <tr>
+                <td>
+                    <div>Q4. &lt;script type="text/javascript"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a = 5 + "9";<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(a);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="d1" value="0">Compilation Error</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="d1" value="1">14</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="d1" value="2">Runtime Error</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="d1" value="3">59</div>
+                </td>
+            </tr>
+
+
+            <tr><td><div>&nbsp;</div></td></tr>
+
+            <tr>
+                <td>
+                    <div>Q5. What is the use of the &lt;noscript&gt; tag in Javascript?</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="e1" value="0">The contents are displayed by non-JS-based browsers.</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="e1" value="1">Clears all the cookies and cache.</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="e1" value="2">Both A and B.</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><input type="radio" name="e1" value="3">None of the above.</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td style="text-align: center;">
+                    <input type="button" name="sbtn" value="submit" onclick="solve();">
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td>
+                    <div id="tq"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="ta"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="tua"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="ca"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="ia"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="tm"></div>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

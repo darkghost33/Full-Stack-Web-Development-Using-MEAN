@@ -7,3 +7,12 @@ lg - laptop desktop - >=1200px
 offset to arrange elements in grid:-
 
 Grid Classes
+
+
+Accessing values of radio button -
+
+document.formName.controlName[Index].values
+
+checking status of radio buton-
+
+document.formName.controlName[Index].checked - returns true or false
