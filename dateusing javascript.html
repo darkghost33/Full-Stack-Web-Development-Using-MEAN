@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // for(i=1; i<32; i++)
+        // {
+        //     document.getElementById("day") = i;
+        // }
+        function draw()
+        {
+            Months= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+            document.write("<select>")
+                for(i=1; i<32; i++)
+                {
+                    document.write("<option>" + i + "</option>");
+                }
+            document.write("</select>");
+
+            document.write("&nbsp;&nbsp;&nbsp;&nbsp;<select>")
+                for(i=0; i<12; i++)
+                {
+                    document.write("<option>" + Months[i] + "</option>");
+                }
+            document.write("</select>");
+
+
+            document.write("&nbsp;&nbsp;&nbsp;&nbsp;<select>")
+                for(i=1990; i<2023; i++)
+                {
+                    document.write("<option>" + i + "</option>");
+                }
+            document.write("</select>");
+        }
+        draw();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
