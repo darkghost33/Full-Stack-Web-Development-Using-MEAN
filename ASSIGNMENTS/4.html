@@ -44,13 +44,13 @@
                 if(document.frm.e1[0].checked)  corr_ans++;
                 else    wrong_ans++;
             }
-
-            no_unattempt = total - c;
+            no_unattempt = 0;
+            no_unattempt = 5 - c;
             total = corr_ans*2;
 
             document.getElementById("tq").textContent = "Total Number of Questions = 5";
             document.getElementById("ta").textContent = "No. of Attempted Questions = " + c;
-            document.getElementById("tua").textContent = "No. of Unattempted Questions = " + no_attempt; 
+            document.getElementById("tua").textContent = "No. of Unattempted Questions = " + no_unattempt; 
             document.getElementById("ca").textContent = "No. of Correct Questions = " + corr_ans;
             document.getElementById("ia").textContent = "No. of Incorrect Questions = " + wrong_ans;
             document.getElementById("tm").textContent = "Total Marks = " + total + " out of 10"
@@ -61,7 +61,7 @@
 <body>
     <div>&nbsp;</div>
     <form action="" style="margin-left: 10px;" name="frm">
-        <table align="center" cellspacing="20" style="border: 5px solid rgb(41, 244, 41);">
+        <table align="center" cellspacing="20" style="border: 5px solid rgb(41, 244, 41); background-color: rgb(179, 215, 247);">
             <tr>
                 <td>
                     <div>Q1.Javascript is an _______ language?</div>
