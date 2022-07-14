@@ -68,70 +68,96 @@
 
 //ANONYMOUS FUNCTIONS ----
 //==================================================
-var fun = function(){
-    console.log("Message Function");
-}
+// var fun = function(){
+//     console.log("Message Function");
+// }
 
-var fun1 =function(a,b)
-{
-    c = a+b;
-    console.log("Sum is " + c);
-}
+// var fun1 =function(a,b)
+// {
+//     c = a+b;
+//     console.log("Sum is " + c);
+// }
 
-fun();
-fun1(2,5);
-//===================================================
+// fun();
+// fun1(2,5);
+// //===================================================
 
 
 
-//ARROW FUNCTION--------
-//===================================================
-var fun = ()=>
-{
-    console.log("Message arrow function")
-}
+// //ARROW FUNCTION--------
+// //===================================================
+// var fun = ()=>
+// {
+//     console.log("Message arrow function")
+// }
 
-var fun1= (a,b,c)=>
-{
-    s = a+b+c
-    console.log("Sum is = "+s)
-}
+// var fun1= (a,b,c)=>
+// {
+//     s = a+b+c
+//     console.log("Sum is = "+s)
+// }
 
-fun();
-fun1(4,2,5);
-//======================================================
+// fun();
+// fun1(4,2,5);
+// //======================================================
 
-//Create 4 arrow functions which accepts 2 arguemnet and perform add,sub,mul,divide
-console.log("")
-var add = (a,b)=>
-{
-    console.log("Addition is = "+a+b)
-}
-var sub = (a,b)=>
-{
-    console.log("Difference is = "+(a-b))
-}
-var mul = (a,b)=>
-{
-    console.log("Multiplication is = "+a*b)
-}
-var div = (a,b)=>
-{
-    console.log("Division is = "+(a/b))
-}
+// //Create 4 arrow functions which accepts 2 arguemnet and perform add,sub,mul,divide
+// console.log("")
+// var add = (a,b)=>
+// {
+//     console.log("Addition is = "+a+b)
+// }
+// var sub = (a,b)=>
+// {
+//     console.log("Difference is = "+(a-b))
+// }
+// var mul = (a,b)=>
+// {
+//     console.log("Multiplication is = "+a*b)
+// }
+// var div = (a,b)=>
+// {
+//     console.log("Division is = "+(a/b))
+// }
 
-add(2,3); sub(5,4); mul(5,7); div(24,8);
+// add(2,3); sub(5,4); mul(5,7); div(24,8);
 
-//=========================================================
-console.log("")
+// //=========================================================
+// console.log("")
 //Server using node
 
-var http = require("http") //Create object of http module
-http.createServer(          //Create server with request response
-    function(req,res)
-    {
-        res.write("Output of my server in Node")  //Write method to show response in browser
-        res.end();      //To stop the write method
-    }
-).listen(8080)      //8080 is the port no. on which the server is running
+// var http = require("http") //Create object of http module
+// http.createServer(          //Create server with request response
+//     function(req,res)
+//     {
+//         res.write("Output of my server in Node")  //Write method to show response in browser
+//         res.end();      //To stop the write method
+//     }
+// ).listen(8080)      //8080 is the port no. on which the server is running
+
+
+// var http = require("http") //Create object of http module
+// http.createServer(          //Create server with request response
+//     function(req,res)
+//     {
+//         res.writeHead(200,{"content-type":"text/html"}) //To write html freely(content type is object)
+//         res.write("<html>")
+//         res.write("<body>")
+//         res.write("<h1>Hello World</h1>")
+//         res.write("</body>")
+//         res.write("</html>")  
+//         res.end();      
+//     }
+// ).listen(8080)
+
+
+// console.log("Hello World")
+// console.log("Hello World 2")
+
+//=====================================================
+// var file = require("./export.js"); 
+// console.log(file)
+
+var file = require("./export.js"); 
+console.log(file.SimpleMessage)
 

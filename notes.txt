@@ -4,15 +4,25 @@ md - small laptops - >=992px
 lg - laptop desktop - >=1200px
 
 
-offset to arrange elements in grid:-
+//offset to arrange elements in grid:-
 
 Grid Classes
 
 
-Accessing values of radio button -
+//Accessing values of radio button -
 
 document.formName.controlName[Index].values
 
-checking status of radio buton-
+//checking status of radio buton-
 
 document.formName.controlName[Index].checked - returns true or false
+
+//Exporting module
+In require() function will return an object 
+{SimpleMsg:"United College"} and assign it to 
+the msg variable
+
+//NPM install
+npm install -global moduleName
+or
+npm i -g moduleName
